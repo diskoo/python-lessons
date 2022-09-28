@@ -4,7 +4,8 @@ m = []
 for i in n:
     if i == 8:
         continue
-    m.append(i)
+    # m.append(i)
+    m.insert(0, i)
 
 else:
     print(m)
