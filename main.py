@@ -1,4 +1,3 @@
 import math
 
-print(float(int(math.pi)))
-# Пачиму 3.0
+print(float(math.pi))
