@@ -1,12 +1,19 @@
-c = list('0123456789')
-print(c)
-u = input('Введите число: ')
+#Дебильный калькулятор
+a = float(input('Введите первое число: '))
+operation = input('Что сделать? (+, -): ')
+b = float(input('Введите второе число: '))
+result = 0
 
-if u in c:
-    print(u)
+if operation == '+':
+    result = a + b
+elif operation == '-':
+    result = a - b
+elif operation == '*':
+    result = a * b
+elif operation == '/':
+    result = a / b
 else:
-    print('Ошибка')
-# Вспомнил что такое list, count, float
+    print('Что то пошло не так')
+        #break не робiт
 
-
-
+print(f'Результат: {result}')
