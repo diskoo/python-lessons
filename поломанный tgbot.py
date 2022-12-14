@@ -19,6 +19,11 @@ async def echo(message: types.Message):
     resp_msg += f'Текущая температура: {celsius}°\n'
     resp_msg += f'Состояние погоды: {weather.current.sky_text}'
 
+    if celsius <= 10:
+        resp_msg += '\n\n Прохладно! Одевайтесь потеплее!'
+    else:
+        resp_msg += '\n\n Тепло! Одевайтесь полегче!'
+
     await message.answer(resp_msg)
 
 # run long-polling
