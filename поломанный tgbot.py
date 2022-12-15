@@ -5,7 +5,7 @@ import python_weather
 # bot init
 bot = Bot(token='5882517471:AAGHtBd-534qB7f3e1LdN7aXng1rsicQMhA')
 dp = Dispatcher(bot)
-
+# чета тута не работает походу
 client = python_weather.Client(format=python_weather.IMPERIAL)
     
 # echo
